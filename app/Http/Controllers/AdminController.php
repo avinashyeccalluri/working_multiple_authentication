@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Book;
 
 class AdminController extends Controller
 {
@@ -25,7 +26,8 @@ class AdminController extends Controller
     {
         return view('Admin');
     }
-    public function home(){
-        return 'you are in';
+    public function showbooks(){
+        $books=Book::all();
+        return view('Admin.showbooks',compact('books'));
     }
 }

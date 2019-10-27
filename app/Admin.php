@@ -16,6 +16,9 @@ class Admin extends Authenticatable
      *
      * @var array
      */
+    public function books(){
+        return $this->hasMany('App\Book');
+    }
     protected $fillable = [
         'name', 'email', 'password',
     ];

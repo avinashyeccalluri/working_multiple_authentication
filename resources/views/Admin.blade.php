@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in as Admin!
+                    You are logged in as Admin! <br> <br>
+                    <a href="/admin/showbooks">Show the books</a>
                 </div>
             </div>
         </div>

@@ -7,10 +7,17 @@
   <title>Document</title>
 </head>
 <body>
+<div>
+  <a href="/admin/addbookstostock">Add books to stock</a> <br> <br>
+  </div>
 <ol>
   @foreach($books as $a)
-  <li>{{$a->Book_Name}} written by {{$a->Book_Author}} </li>  
-  @endforeach
+  <li>{{$a->Book_Name}} written by {{$a->Book_Author}} and the stock quantity is {{$a->Qunatity_Available}} <a href="/admin/{{$a->id}}/organizestock">Update or Delete </a> <br> <br> </li>  
+  @endforeach  
   </ol>
+ 
+  
+  
+ 
 </body>
 </html>

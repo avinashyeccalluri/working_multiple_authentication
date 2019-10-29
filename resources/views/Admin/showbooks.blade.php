@@ -7,6 +7,8 @@
   <title>Document</title>
 </head>
 <body>
+<h3><a href="/admin" >Home</a></h3> <br> <br>
+
 <div>
   <a href="/admin/addbookstostock">Add books to stock</a> <br> <br>
   </div>

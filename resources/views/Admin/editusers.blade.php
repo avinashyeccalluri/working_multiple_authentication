@@ -7,6 +7,8 @@
   <title>Document</title>
 </head>
 <body>
+<h3><a href="/admin" >Home</a></h3> <br> <br>
+
 <form action="/admin/{{$user->id}}/update" method="post">
 @csrf
 @method('PATCH')

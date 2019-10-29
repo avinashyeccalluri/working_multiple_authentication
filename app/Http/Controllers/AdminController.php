@@ -8,21 +8,10 @@ use App\User;
 
 class AdminController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth:admin');
     }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         return view('Admin');
@@ -55,7 +44,7 @@ class AdminController extends Controller
         // echo "request['name']"  ;
         // $book->update(request(['name','author','quantity']));
         
-        $a=(request(['name','author','quantity']));
+        $a=(request(['Book_Name','Book_Author','Qunatity_Available']));
         $book->update($a);
         // dd($book);
                 return redirect ('/admin/showbooks');

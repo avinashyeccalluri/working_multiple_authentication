@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+<h3><a href="/admin" >Home</a></h3> <br> <br>
 @foreach($errors->all() as $e)
 <li>{{$e}}</li>
 @endforeach

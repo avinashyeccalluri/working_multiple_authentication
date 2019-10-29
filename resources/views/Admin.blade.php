@@ -17,6 +17,7 @@
                     You are logged in as Admin! <br> <br>
                     <a href="/admin/showbooks">Show the books</a> <br> <br>
                     <a href="/admin/showusers">List the users</a> <br> <br>
+                    <a href="">View the orders</a>
                 </div>
             </div>
         </div>

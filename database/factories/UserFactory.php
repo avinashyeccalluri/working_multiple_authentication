@@ -31,5 +31,6 @@ $factory->define(Book::class,function(Faker $faker){
         'Book_Name'=>$faker->name,
         'Book_Author'=>$faker->name,
         'Qunatity_Available'=>$faker->numberBetween(0,12),
+        'Price'=>$faker->numberBetween(100,250),
     ];
 });

@@ -7,13 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-<h3><a href="/admin" >Home</a></h3> <br> <br>
-
-  <h1>Show users page</h1>
-  <ol>
-  @foreach($user as $u)
-  <li>{{$u->name}} <a href="/admin/{{$u->id}}/edit">Edit</a></li>
-  @endforeach
-  </ol>
+  <h1>Order Placed</h1>
 </body>
 </html>
